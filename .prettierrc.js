@@ -4,7 +4,7 @@ module.exports = {
   // 单引号
   singleQuote: true,
   // 箭头函数参数添加括号
-  arrowParens: 'avoid',
+  arrowParens: 'always',
   // 每一行长度
   printWidth: 120,
   // Tab宽度
@@ -13,6 +13,6 @@ module.exports = {
   useTabs: false,
   // 结尾
   endOfLine: 'lf',
-  // 是否在对象属性添加空格，这里选择是 { foo: bar }
+  // 是否在对象属性添加空格 { key: val }
   bracketSpacing: true,
 }
