@@ -1,27 +1,36 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
+// import styleImport, { VantResolve } from 'vite-plugin-style-import'
 
-// 文档 https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [vue()],
-  server: {
-    open: true,
-    https: true,
-  },
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src'),
+export default defineConfig(() => {
+  return {
+    plugins: [
+      vue(),
+      // styleImport({
+      //   resolves: [VantResolve()],
+      // }),
+    ],
+    server: {
+      open: true,
+      // https: true,
     },
-  },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: [
-          `@import "@/style/base/globalVariable.scss";
-           @import "@/style/base/globalMixin.scss";`,
-        ],
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, 'src'),
+      },
+      extensions: ['.ts', '.tsx', '.js', '.json'],
+    },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: [
+            `@import "@/style/base/globalVariable.scss";
+             @import "@/style/base/globalMixin.scss";`,
+          ],
+        },
       },
     },
-  },
+    build: {},
+  }
 })
