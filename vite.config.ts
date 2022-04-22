@@ -1,15 +1,15 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
-// import styleImport, { VantResolve } from 'vite-plugin-style-import'
+import styleImport, { VantResolve } from 'vite-plugin-style-import'
 
 export default defineConfig(() => {
   return {
     plugins: [
       vue(),
-      // styleImport({
-      //   resolves: [VantResolve()],
-      // }),
+      styleImport({
+        resolves: [VantResolve()],
+      }),
     ],
     server: {
       open: true,
