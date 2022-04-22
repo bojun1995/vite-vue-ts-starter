@@ -19,7 +19,7 @@ export default defineConfig(() => {
       alias: {
         '@': path.resolve(__dirname, 'src'),
       },
-      extensions: ['.ts', '.tsx', '.js', '.json'],
+      extensions: ['.ts', '.tsx', '.js'],
     },
     css: {
       preprocessorOptions: {
