@@ -1,12 +1,11 @@
 <template>
   <div id="app">
-    <layout></layout>
+    <the-layout></the-layout>
   </div>
 </template>
 
 <script setup lang="ts">
-import { reactive } from 'vue'
-import Layout from '@/layout/index.vue'
+import TheLayout from '@/layout/TheLayout.vue'
 </script>
 
 <style lang="scss" rel="stylesheet/scss" type="text/scss" scoped></style>

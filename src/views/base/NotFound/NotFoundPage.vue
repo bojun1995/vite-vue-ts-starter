@@ -5,9 +5,7 @@
   </div>
 </template>
 
-<script setup>
-import { reactive } from 'vue'
-</script>
+<script setup></script>
 
 <style lang="scss" rel="stylesheet/scss" type="text/scss" scoped>
 .custom-text {

@@ -4,12 +4,12 @@ const baseRoutes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import('@/views/base/Home/index.vue'),
+    component: () => import('@/views/base/Home/HomePage.vue'),
   },
   {
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
-    component: () => import('@/views/base/NotFound/index.vue'),
+    component: () => import('@/views/base/NotFound/NotFoundPage.vue'),
   },
 ]
 
