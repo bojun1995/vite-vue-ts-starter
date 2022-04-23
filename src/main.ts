@@ -9,6 +9,11 @@ import '@/style/base/globalStyle.scss'
 import router from '@/router/index'
 app.use(router)
 
+// pinia
+import { createPinia } from 'pinia'
+const pinia = createPinia()
+app.use(pinia)
+
 // vant
 import vantInstaller from '@/install/vant'
 app.use(vantInstaller)
