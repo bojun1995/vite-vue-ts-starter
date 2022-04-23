@@ -5,6 +5,8 @@ import styleImport, { VantResolve } from 'vite-plugin-style-import'
 
 export default defineConfig(() => {
   return {
+    envDir: './env',
+    envPrefix: ['VITE_'],
     plugins: [
       vue(),
       styleImport({
