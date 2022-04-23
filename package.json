@@ -12,6 +12,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "axios": "^0.26.1",
     "pinia": "^2.0.13",
     "vant": "^3.4.8",
     "vue": "^3.2.25",

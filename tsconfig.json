@@ -2,6 +2,7 @@
   "compilerOptions": {
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
+    // "noImplicitAny": false,
     "target": "esnext",
     "useDefineForClassFields": true,
     "module": "esnext",
